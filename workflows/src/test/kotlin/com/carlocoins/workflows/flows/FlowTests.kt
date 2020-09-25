@@ -144,6 +144,8 @@ open class FlowTests {
         suellenCar = QueryUtilities.getLinearStateById<CarState>(services = suellen.services, linearId = linearId)
 
         suellenCarByBruno = QueryUtilities.getLinearStateById<CarState>(services = bruno.services, linearId = linearId)
+
+        val newBrunoBalance = bruno.services.vaultService.tokenBalance(statePointer)
     }
 
     private fun getObservers(): List<Party>{

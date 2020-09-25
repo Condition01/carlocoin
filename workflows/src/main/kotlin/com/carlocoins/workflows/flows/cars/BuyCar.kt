@@ -62,7 +62,7 @@ object BuyCar {
                     transactionBuilder = txBuilder,
                     serviceHub = serviceHub,
                     amount = carloCoinAmount,
-                    holder = newOwner,
+                    holder = carState.owner,
                     changeHolder = me)
 
             val counterpartySessions = newCarState.participants.filter {
