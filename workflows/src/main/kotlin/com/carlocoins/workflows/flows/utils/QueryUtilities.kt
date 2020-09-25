@@ -51,8 +51,4 @@ object QueryUtilities {
         return Pair(totalAmountWithoutDollarParse, dollarParsedAmount)
     }
 
-
-
-
-
 }
